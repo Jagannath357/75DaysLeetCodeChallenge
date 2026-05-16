@@ -29,6 +29,8 @@ public class Solution {
         for(int i = n1-1, j = n2-1; i>=0 && j >= 0; i--, j--){
             if(lstA.get(i) == lstB.get(j)){
                 ans = lstA.get(i);
+            } else {
+                break;
             }
         }
         return ans;
